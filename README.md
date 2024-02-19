@@ -1,5 +1,3 @@
-# web-projects
-
 sequenceDiagram
     participant browser
     participant server
