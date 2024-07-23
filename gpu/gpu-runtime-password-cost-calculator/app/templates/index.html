@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPU Runtime Password Cost Calculator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>GPU Runtime Password Cost Calculator</h1>
+    <form action="/calculate" method="post">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <label for="timeframe">Time Frame (in hours):</label>
+        <input type="number" id="timeframe" name="timeframe" required>
+        <label for="gpu">GPU Model:</label>
+        <input type="text" id="gpu" name="gpu" required>
+        <label for="electricity">Electricity Cost (per kWh):</label>
+        <input type="number" id="electricity" name="electricity" step="0.01" required>
+        <button type="submit">Calculate</button>
+    </form>
+</body>
+</html>
