@@ -59,8 +59,8 @@ Let's collaborate to make this tool both powerful and user-friendly!
 
 ```mermaid
 graph LR
-    A[User Input] -->|password, constraints|> B[Estimate Attempts]
-    B -->|attempts, GPU pricing|> C[Calculate Cost]
-    C -->|cost|> D[Output Report]
-    D -->|report|> E[User]
+    A[User Input] --> B[Estimate Attempts]
+    B --> C[Calculate Cost]
+    C --> D[Output Report]
+    D --> E[User]
 ```
