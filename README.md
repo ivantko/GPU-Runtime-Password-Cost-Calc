@@ -21,6 +21,11 @@ Traditional password strength meters often provide an estimated time to crack th
 2. **Calculation:** The system estimates the number of attempts required to crack the password and calculates the corresponding cost based on current GPU runtime pricing.
 3. **Output:** Users receive a detailed report on the estimated cost to crack their password under the provided conditions.
 
+## Current State
+- **Basic Structure:** The project has a basic structure with initial setup and routing.
+- **Initial Logic:** Basic logic for cost calculation is being implemented.
+- **Testing:** Initial tests are being conducted to ensure the functionality of the app.
+
 ## Target Audience
 - **Security Enthusiasts:** Individuals interested in understanding and improving their password security.
 - **Educators:** Teachers or organizations looking to demonstrate the importance of strong passwords.
@@ -51,3 +56,11 @@ Questions or ideas? Contact me via:
 - GitHub: [@ivantko](https://github.com/ivantko)
 
 Let's collaborate to make this tool both powerful and user-friendly!
+
+```mermaid
+graph LR
+    A[User Input] -->|password, constraints|> B[Estimate Attempts]
+    B -->|attempts, GPU pricing|> C[Calculate Cost]
+    C -->|cost|> D[Output Report]
+    D -->|report|> E[User]
+```
