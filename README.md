@@ -1,57 +1,54 @@
 # GPU Runtime Password Cost Calculator
 
 ## Overview
-This project aims to address a common issue in the realm of password security: the misleading metrics provided by numerous "how long to crack my password" sites. Instead of focusing on the time it takes to crack a password, this calculator shifts the perspective towards a more tangible and economically relevant metric: the cost in GPU runtime. The purpose is to provide users with an estimate of how much it would cost in terms of GPU resources to crack their password within a specific timeframe.
-
-## Why GPU Runtime Cost?
-Traditional password strength meters often provide an estimated time to crack the password, which can be highly misleading due to the variance in attacker resources and methods. By focusing on the cost in GPU runtime:
-
-- **Real-World Relevance:** It aligns with an attacker's perspective, considering the actual economic cost of launching an attack.
-- **Customizability:** Users can input constraints to see how changes in attacker resources or time affect the cost to crack the password.
-- **Educational Value:** It helps users understand the economics of password cracking and encourages better security practices.
+This project estimates the cost in GPU runtime to crack a password, providing a more economically relevant metric than traditional password strength meters.
 
 ## Features
-- **Cost Estimation:** Calculate the approximate cost in GPU runtime to crack a given password under specified constraints.
-- **Adjustable Parameters:** Allow users to adjust variables such as time frame, GPU type, and electricity cost.
-- **Real-Time Data:** Incorporate up-to-date pricing and performance data for various GPUs.
-- **Secure Design:** Ensure that all password calculations are done client-side to maintain user privacy.
+- **Cost Estimation:** Approximate GPU runtime cost to crack a password.
+- **Adjustable Parameters:** Customize time frame, GPU type, and electricity cost.
+- **Real-Time Data:** Up-to-date pricing and performance data for various GPUs.
+- **Secure Design:** Client-side password calculations to maintain privacy.
 
 ## How It Works
-1. **Input:** Users enter their password and set the desired constraints (e.g., time frame, GPU model).
-2. **Calculation:** The system estimates the number of attempts required to crack the password and calculates the corresponding cost based on current GPU runtime pricing.
-3. **Output:** Users receive a detailed report on the estimated cost to crack their password under the provided conditions.
+1. **Input:** Enter password and set constraints (e.g., time frame, GPU model).
+2. **Calculation:** Estimate attempts and calculate cost based on GPU pricing.
+3. **Output:** Detailed report on the estimated cost.
 
-## Current State
-- **Basic Structure:** The project has a basic structure with initial setup and routing.
-- **Initial Logic:** Basic logic for cost calculation is being implemented.
-- **Testing:** Initial tests are being conducted to ensure the functionality of the app.
-
-## Target Audience
-- **Security Enthusiasts:** Individuals interested in understanding and improving their password security.
-- **Educators:** Teachers or organizations looking to demonstrate the importance of strong passwords.
-- **Researchers:** Those studying password security and economics who need a tool for quick and realistic estimations.
+## How to Run
+1. **Clone the repository:**
+    ```bash
+    git clone https://github.com/ivantko/gpu-runtime-password-cost-calculator.git
+    cd gpu-runtime-password-cost-calculator
+    ```
+2. **Set up the virtual environment:**
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+    ```
+3. **Install dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+4. **Run the application:**
+    ```bash
+    python main.py
+    ```
 
 ## Project Status
+- **Basic Structure:** Initial setup and routing.
+- **Initial Logic:** Basic cost calculation logic.
+- **Testing:** Initial functionality tests.
 
-### Inception
+## Target Audience
+- **Security Enthusiasts**
+- **Educators**
+- **Researchers**
 
-This project is in its early stages, aiming to develop a unique GPU Runtime Password Cost Calculator. We're laying the groundwork and are excited about the journey ahead.
+## Collaboration Welcome
+**Join the Effort:** Contributions are welcome. Fork the repo, create a feature branch, develop and test your changes, and submit a pull request.
 
-### Collaboration Welcome
-
-**Join the Effort:** If you're interested in security, economic modeling, or just making impactful tools, your contributions are welcome. Ways to contribute include offering suggestions, enhancing features, coding, or testing.
-
-### Quick Start for Contributors
-
-1. **Reach Out:** Share your ideas or propose improvements.
-2. **Fork & Branch:** Fork the repo and create your feature branch.
-3. **Develop & Test:** Implement your changes and test them.
-4. **Pull Request:** Submit your enhancements for review.
-
-### Get in Touch
-
+## Get in Touch
 Questions or ideas? Contact me via:
-
 - Email: [iv.tko@pm.me](mailto:iv.tko@pm.me)
 - GitHub: [@ivantko](https://github.com/ivantko)
 
